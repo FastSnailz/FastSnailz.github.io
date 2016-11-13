@@ -1,0 +1,56 @@
+body {
+	background: -webkit-linear-gradient(top, rgba(247,234,49,1) 0%,rgba(244,244,244,1) 50%,rgba(244,244,244,1) 58%,rgba(32,124,202,1) 100%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%);
+	}
+	
+	h1  {
+		font-family: "Arial";
+		color:005AA3;
+		text-align:center;
+}
+
+h2 {
+	font-family: "Arial";
+	color:1D3990;
+	text-align:center;
+}
+
+
+tr {
+	font-family: "Arial";
+	color:black;
+	text-align:center;
+}
+table {
+	border-style: solid;
+	border-color:lightblue;
+	font-size:150%;
+	border-collapse:collapse;
+	
+}
+li {
+	font-size:150%;
+	font-family: "Arial";
+	color:005AA6;
+
+}
+
+th {
+    background-color: lightblue;
+    color: black;
+}
+p{
+	font-family: "Arial";
+	color:1D3990;
+	text-align:center;
+	font-size:150%;
+}
+
+
+
+
+<style>
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:darkblue;background-color:transparent; text-decoration:none}
+a:hover   {color:lightblue;background-color:transparent; text-decoration:none}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+</style>

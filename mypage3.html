@@ -1,0 +1,116 @@
+<html>
+	<head>
+	<title>MAS110 Assignment</title>
+	<link rel="stylesheet" type=
+	"text/css" href="styles.css" />
+	
+	</head>
+			<CENTER> 
+<FORM NAME="marquee1"> 
+<INPUT NAME="text" SIZE=25
+VALUE="The MP3 formats success and the negative aspects of its use."
+> 
+</FORM> 
+</CENTER>
+<SCRIPT> 
+<!-- 
+/*Text box marquee by Dave Methvin,
+Windows Magazine
+May be used/modified if credit line is
+retained*/
+ScrollSpeed = 100
+ScrollChars = 1
+function ScrollMarquee() {
+window.setTimeout('ScrollMarquee()',ScrollSpeed);
+
+var msg = document.marquee1.text.value; 
+document.marquee1.text.value =
+msg.substring(ScrollChars) +
+msg.substring(0,ScrollChars); 
+} 
+ScrollMarquee()
+//-->
+</SCRIPT>
+	<body>
+		<h1>Welcome to the References Page</h1>
+		
+		<h2>References</h2>
+		<marquee behavior="alternate"><img src="cd.jpg" /></MARQUEE>
+		<p><a href="https://www.flickr.com/photos/freejpg/3030481589/in/photolist-5BN1Az-5HPAjB-uK3V3b-82W8aR-vfPPV-5TvFtr-6SDJ4-9Vw25t-9VyRUm-9Vw1Pv-9Vw1Yt-9Vw212-kLbZz-5TvFA4-Q5FL-6Cs1E-5TvFfp-8VGksb-oidwQ3-7FQBsj-5viwDx-h7e42-78DjnX-kLbUH-5XPhcB-aweGBv-4GhfVL-4nMqV9-4eSU6Z-6QL59x-DbXCz-6uoUCG-5uYqmo-4Yg3wF-q3EHqW-4GhfVG-ywRZX-nKrtKy-ywRZU-CMEN2-4So6tY-4LSiHJ-4GaDSW-nxkNJw-6rUYs8-hbY66W-6Q7u1X-cgp8a7-N6Yfp-bpMmu">"cds freejpg.com.ar"</a> by Freejpg is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a><p>
+	<p>Webwise Team (2012, 10th October) <i>What is an MP3?</i> Retrieved from http://www.bbc.co.uk/webwise/guides/about-mp3s<p>
+
+
+<p> Vogel, I., Brug, J., Van Der Ploeg, C. P. B., & Raat, H. (2011). <i>Health Education Research, 2011, Vol.26(2), p.254-264.</i><p>
+
+<p>Denegri-Knott, J. (2015).<i> Consumption Markets & Culture, 03 September 2015, Vol.18(5), p.397-401.</i><p>
+	
+	
+<script type="text/javascript">
+
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+
+var trailimage=["cd.jpg", 100, 99]
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+
+}
+
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+
+document.onmousemove=followmouse
+
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+
+</script>
+
+<li><a href="index.html">Back to Home</a>
+
+
+
+
+	</body>
+</html>
+
+		
